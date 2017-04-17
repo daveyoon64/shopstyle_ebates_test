@@ -16,6 +16,16 @@
  * The test takes awhile (roughly > 10 minutes) and the stack frame uses quite a bit of memory!
  * I have a working solution and now I try to make it more readable and reusable.
 
+## Third Pass
+ * I start to look for better solutions and modules!
+ * I come across the Scrapy module, which works well with the yield generator to check all the required pages.
+ * Rewrote as the class VikiSpider() to make it reusuable.
+ * The modification is much faster! (around 4 minutes) uses much less memory.
+
+## Final Notes
+ * In all my tests, I always got 10,000 'hd': 'true' and 0 'hd': 'false'. I'm suspicious that my tests were "perfect" and wanted to test this further, given more time.
+ * I may have violated Internet etiquette by scraping api.viki.io a bit aggressively. I would probably spend a time implementing Scrapy's AutoThrottle extension to fine tune an optimal crawling speed.
+
 # Environment
 I used virtualenv & virtualenvwrapper with pip managing my custom packages.
 Sublime was my primary text editor with the Python 3.6 interpreter (via Mac Terminal). 
