@@ -11,6 +11,10 @@
  * I break the problem down and get the first page meeting the criteria.
 
 ## Second Pass
+ * I keep it simple when planning the crawling. I intially try out a simple recursion.
+ * Although this works, there's a lot of concerns in terms of memory usage and Python's limited recursion capabilities.
+ * The test takes awhile (roughly > 10 minutes) and the stack frame uses quite a bit of memory!
+ * I have a working solution and now I try to make it more readable and reusable.
 
 # Environment
 I used virtualenv & virtualenvwrapper with pip managing my custom packages.
