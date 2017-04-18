@@ -4,6 +4,24 @@
  * It will then look for a 'flags' key, and then check for a 'hd' key.
  * It will then continually increment the pages until the 'more' key returns false.
  * Finally, he script will then print out how many response objects are true and how many are false.
+# How to Run
+ 1. Install Python 3.6.1.
+ ```
+ https://www.python.org/downloads/
+ ```
+ 2. Install scrapy
+ ```
+ pip install scrapy
+ ```
+ 3. Navigate to viki_scrape/viki_scrape/
+ 3a. If running from a Windows computer, please install...
+ ```
+ pip install pypiwin32
+ ```
+ 4. Type in the following
+ ```
+ scrapy crawl viki
+ ```
 
 # Process
 ## Initial Commit
